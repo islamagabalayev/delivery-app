@@ -1,0 +1,17 @@
+package com.delivery.courier.event;
+
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+import org.hibernate.query.Order;
+
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
+public class OrderAssignedEvent {
+
+    private Long orderId;
+    private Long courierId;
+}
